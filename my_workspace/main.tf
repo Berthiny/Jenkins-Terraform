@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "your-region"
 }
 
 module "ec2_instance" {
@@ -22,9 +22,9 @@ module "ec2_instance" {
 }
 
 resource "aws_security_group" "jenkins_sg" {
-  name = "jenkins_terraform_sg"
+  name = "your-sg-name"
   description = "Allow ssh and http traffic"
-  vpc_id = "vpc-0836b7ea9e983cd74"
+  vpc_id = "your-vpc-id"
 
   ingress {
     from_port = 22

@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "jenkins-terraform-remote-bkd2023"
-    key = "deballo/terraform.tfstate"
-    region = "us-east-1"
+    bucket = "your-bucket-name"
+    key = "path_of_your_tfstate"
+    region = "your-region"
   }
 }
